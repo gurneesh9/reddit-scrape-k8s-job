@@ -1,0 +1,14 @@
+# Reddit Media Downloader Requirements
+
+# Core Python libraries (built-in)
+requests>=2.25.1
+typing>=3.7.4
+
+# Media download libraries
+yt-dlp>=2024.3.10
+
+# Optional - for Tor support
+PySocks>=1.7.1
+
+# Recommended - for better request handling
+urllib3>=1.26.0

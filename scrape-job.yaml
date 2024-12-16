@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: scrape-job
+spec: 
+  template:
+    spec:
+      containers:
+        - name: pi
+          image: reddit-scrape:1.0
+          imagePullPolicy: Never
+          command: ['python3', '-u', 'RedditDownloader.py', 'LenaPaul']
+      restartPolicy: Never
+  backoffLimit: 4
